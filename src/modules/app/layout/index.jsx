@@ -1,6 +1,7 @@
 import { store } from '/src/store'
 import { Provider } from '/src/adapters/react-redux'
-import { Routes } from '/src/adapters/react-router-dom'
+import { Routes, Route } from '/src/adapters/react-router-dom'
+import SignIn from '/src/modules/auth/login/views'
 
 const App = () => {
 	return (
@@ -9,7 +10,8 @@ const App = () => {
 			<div className='App'>
 				<h1>Welcome to React Router!</h1>
 				<Routes>
-					{/* <Route path="/" element={<Home />} />
+					<Route path='/' element={<SignIn />} />
+					{/* 
           <Route path="about" element={<About />} /> */}
 				</Routes>
 			</div>
